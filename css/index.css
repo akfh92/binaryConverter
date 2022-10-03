@@ -1,0 +1,29 @@
+body h1{
+    font-size:4.8rem;
+    font-weight: 700;
+    margin-right: 1rem;
+    animation: fly-in 0.75s ease-in-out;
+    text-align: center;
+}
+
+body .container header {
+
+    /* Flex properties */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Font properties */
+    font-weight: 200;
+    font-size: 2.4rem;
+
+    /* Structural properties */
+    width: 36rem;
+    height: 4.4rem;
+
+    /* General properties */
+    border-radius: 1rem;
+    background: linear-gradient(180deg, #FE0866 0%, #FF6254 100%);
+    animation: fly-in 0.75s ease-in-out;
+
+}
