@@ -13,9 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+        
     <title>Binary and Decimal Converter</title>
 </head>
 
@@ -48,7 +46,6 @@
                     <!-- decimal converter -->
                     <div class="col-md">
                         <div class="head-desc p-2 border bg-light">
-                            <p>Decimal Converter</p>
                             <div id="input-fieldset">
                                 <div id="decConverter">
                                     <label for="Decimal">Decimal</label>
@@ -79,12 +76,10 @@
                     <div class="col-md">
 
                         <div class="head-desc p-2 border bg-light">
-                            <p>Binary Converter</p>
                             <div id="input-fieldset">
                                 <div id="binConverter">
                                     <label for="Binary">Binary</label>
-                                    <input type="number" id="decimal" name="decimal" min="0" max="1"
-                                        onkeypress="return isValidNum(event)">
+                                    <input type="number" id="decimal" name="decimal" min="0" max="1">
                                 </div>
                             </div>
                             <div id="output-fieldset">
@@ -109,12 +104,10 @@
                     <!-- Hex Converter -->
                     <div class="col-md">
                         <div class="head-desc p-2 border bg-light">
-
-                            <p>Hexadecimal Converter</p>
                             <div id="input-fieldset">
                                 <div id="hexConverter">
                                     <label for="hex">Hexadecimal</label>
-                                    <input type="text" id="hex" name="hex" onkeypress="return isValidNum(event)">
+                                    <input type="text" id="hex" name="hex" >
                                 </div>
                             </div>
                             <div id="output-fieldset">
