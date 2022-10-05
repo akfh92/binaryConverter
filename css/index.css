@@ -1,12 +1,36 @@
-body h1{
+body .container {
+    display: flex;
+    justify-content: center;
+    margin: clamp(2rem, 2vw, 10rem) clamp(2rem, 5vw, 25rem);
+}
+
+body .container #calculation {
+    max-width: 50rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+body .container #calculation header {
+    display: flex;
+    flex-direction: column;
+}
+
+body .container #calculation header .header-title {
+    display: flex;
+    flex-direction: row;
+}
+body .container #calculation header .header-title h1 {
     font-size:4.8rem;
     font-weight: 700;
     margin-right: 1rem;
-    animation: fly-in 0.75s ease-in-out;
-    text-align: center;
+    animation: swipe-left 0.75s ease-in-out;
 }
-
-body .container header {
+body .container #calculation header .header-title img {
+    width: 5rem;
+    height: 5rem;
+    animation: fly-in 0.75s ease-in-out;
+}
+body .container #calculation header .header-description {
 
     /* Flex properties */
     display: flex;
@@ -26,4 +50,70 @@ body .container header {
     background: linear-gradient(180deg, #FE0866 0%, #FF6254 100%);
     animation: fly-in 0.75s ease-in-out;
 
+}
+body .container #calculation #application {
+    display: flex;
+    flex-direction: column;
+    margin: 10rem 0rem;
+}
+body .container #calculation #application #input-fieldset {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    animation: swipe-right 0.75s ease-in-out; */
+}
+
+body .container #calculation #application #input-fieldset label {
+    font-size: 2.4rem;
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+}
+body .container #calculation #application #input-fieldset input {
+
+    /* Structural properties */
+    width: 13rem;
+    height: 5rem;
+    padding: 1.2rem 2rem;
+    margin-bottom: 1rem;
+
+    /* Font properties */
+    color: #868686;
+    font-weight: 200;
+    font-size: 2.4rem;
+
+    /* General properties */
+    border-radius: 1rem;
+    border: 3px solid #FF5F55;
+}
+
+body .container #calculation #application #output-fieldset {
+    animation: zoom 0.75s ease-in-out;
+}
+body .container #calculation #application #output-fieldset label {
+    font-size: 2.4rem;
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+}
+body .container #calculation #application #output-fieldset .input-block  {
+    display: flex;
+    position: relative;
+}
+body .container #calculation #application #output-fieldset .input-block input {
+
+    /* Structural properties */
+    width: 36rem;
+    height: 6rem;
+    padding: 1.2rem 2rem;
+    padding-right: 6rem;
+    background-color: #443D63;
+
+    /* Font properties */
+    color: #6C689F;
+    font-weight: 200;
+    font-size: 2.4rem;
+
+    /* General properties */
+    border: none;
+    border-radius: 1rem;
+    cursor: not-allowed;
 }
