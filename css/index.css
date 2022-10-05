@@ -60,7 +60,7 @@ body .container #calculation #application #input-fieldset {
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
-    animation: swipe-right 0.75s ease-in-out; */
+    animation: swipe-right 0.75s ease-in-out;
 }
 
 body .container #calculation #application #input-fieldset label {
