@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Hello, we will automate your conversion to Decimal, Binary, and Hexadecimal for free in optimal speed.">
+    <meta name="keywords"
+        content="Decimal,Binary,BinaryConversion,Decimal to Binary,BinaryConverter,HexConverter,Hexadecimal,converter">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <link rel="stylesheet" type="text/css" href="mainCSS/global.css">
     <link rel="stylesheet" type="text/css" href="mainCSS/main.css">
     <link rel="stylesheet" type="text/css" href="mainCSS/animate.css">
@@ -12,10 +18,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
-        rel="stylesheet">
 
-    <title>Binary and Decimal Converter</title>
+
+
+    <title>Binary to Decimal Converter</title>
+    <link rel="icon" type="image/x-icon" href="fav.png">
 </head>
 
 <body>
@@ -26,15 +33,16 @@
         <header>
 
             <div class="header-title">
-                <h1 class="application title"> Binary to Decimal</h1>
-                <a href="google.com" target="blank_">
-                    <img src="git.svg" alt="GitHub logo">
+                <h1 class="application-title"> Binary to Decimal</h1>
+                <a href="http://decimaltobinarytohex.com/" target="blank_">
+                    <img src="logo.jpg" alt="GitHub logo">
                 </a>
             </div>
             <div class="header-description">
-                <p>This is a binary calculator</p>
+                <h2>Decimal to Binary Converter<br>Binary to Hexadecimal Converter</h2>
+
             </div>
-            
+
         </header>
         <div id="calculation">
             <div id="application">
@@ -70,65 +78,87 @@
                         </div>
                         <div class="column">
                             <div class="two">
-                            <div class="head-desc p-2 border bg-light">
-                                <div id="input-fieldset">
-                                    <div id="binConverter">
-                                        <label for="Binary">Binary</label>
-                                        <input type="number" id="decimal" name="decimal" min="0" max="1">
-                                    </div>
-                                </div>
-                                <div id="output-fieldset">
-                                    <div id="output-bin-dec">
-                                        <label for="Binary">Decimal</label>
-                                        <div class="input-block">
-                                            <input type="text" id="decimal" name="decimal" readonly="readonly">
-                                            <span class="clipboard"></span>
+                                <div class="head-desc p-2 border bg-light">
+                                    <div id="input-fieldset">
+                                        <div id="binConverter">
+                                            <label for="Binary">Binary</label>
+                                            <input type="number" id="decimal" name="decimal" min="0" max="1">
                                         </div>
                                     </div>
-                                    <div id="output-bin-hex">
-                                        <label for="Hexadecimal">Hexadecimal</label>
-                                        <div class="input-block">
-                                            <input type="text" id="decimal" name="decimal" readonly="readonly">
-                                            <span class="clipboard"></span>
+                                    <div id="output-fieldset">
+                                        <div id="output-bin-dec">
+                                            <label for="Binary">Decimal</label>
+                                            <div class="input-block">
+                                                <input type="text" id="decimal" name="decimal" readonly="readonly">
+                                                <span class="clipboard"></span>
+                                            </div>
+                                        </div>
+                                        <div id="output-bin-hex">
+                                            <label for="Hexadecimal">Hexadecimal</label>
+                                            <div class="input-block">
+                                                <input type="text" id="decimal" name="decimal" readonly="readonly">
+                                                <span class="clipboard"></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        </div>
                         <div class="column">
-                            
-                                <div class="head-desc p-2 border bg-light">
-                                    <div id="input-fieldset">
-                                        <div id="hexConverter">
-                                            <label for="hex">Hexadecimal</label>
-                                            <input type="text" id="hex" name="hex">
-                                        </div>
-                                    </div>
-                                    <div id="output-fieldset">
-                                        <div id="output-hex-dec">
-                                            <label for="decimal">decimal</label>
-                                            <div class="input-block">
-                                                <input type="text" id="decimal" name="decimal" readonly="readonly">
-                                                <span class="clipboard"></span>
-                                            </div>
-                                        </div>
-                                        <div id="output-hex-bin">
-                                            <label for="Binary">Binary</label>
-                                            <div class="input-block">
-                                                <input type="text" id="decimal" name="decimal" readonly="readonly">
-                                                <span class="clipboard"></span>
-                                            </div>
-                                        </div>
-                                    </div>
 
+                            <div class="head-desc p-2 border bg-light">
+                                <div id="input-fieldset">
+                                    <div id="hexConverter">
+                                        <label for="hex">Hexadecimal</label>
+                                        <input type="text" id="hex" name="hex">
+                                    </div>
                                 </div>
-                            
+                                <div id="output-fieldset">
+                                    <div id="output-hex-dec">
+                                        <label for="decimal">decimal</label>
+                                        <div class="input-block">
+                                            <input type="text" id="decimal" name="decimal" readonly="readonly">
+                                            <span class="clipboard"></span>
+                                        </div>
+                                    </div>
+                                    <div id="output-hex-bin">
+                                        <label for="Binary">Binary</label>
+                                        <div class="input-block">
+                                            <input type="text" id="decimal" name="decimal" readonly="readonly">
+                                            <span class="clipboard"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="index.js"></script>
+    <div class="paragraph-box">
+        <h3>Tired of wasting time on CLICKING?!<br></h3>
+        <p>Many people waste their time when converting decimals, binary, and hexadecimal.
+            This websites provides the fastest way to convert them.
+            This website tool will help Software Engineers, Software Developers, Computer Science Students, and
+            Mathematicians.
+        </p>
+    </div>
+    <!-- Contact Form -->
+    <!-- <div class="wrapper">
+        <form class="form" action="mailto:sang920807@gmail.com" method="POST" enctype="text/plain" name="EmailForm">
+            <div class="pageTitle title">Suggestions?</div>
+            <div class="secondaryTitle title">Need More Functions?<br>Let Us Know!</div>
+            <label for="name">
+                <input type="text" class="name formEntry" placeholder="Name" />
+            </label>
+            <label for="email">
+            <input type="text" class="email formEntry" placeholder="Email" />
+            </label>
+            <textarea class="message formEntry" placeholder="Message"></textarea>
+            <button class="submit formEntry" value="Send">Submit</button>
+        </form>
+    </div> -->
 </body>
